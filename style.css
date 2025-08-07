@@ -1,0 +1,396 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #121618;
+  color: #ddd;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 20px 10px;
+  border-bottom: 3px solid #a4161a;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.logo {
+  height: 60px;
+  object-fit: contain;
+}
+
+/* Contact details */
+.contact-details p {
+  margin: 4px 0;
+  text-align: right;
+  font-size: 14px;
+  color: #bbb;
+  font-weight: 600;
+}
+
+/* Navigation */
+nav {
+  background-color: #a4161a;
+  box-shadow: 0 3px 6px rgba(164, 22, 26, 0.6);
+  border-bottom: 1px solid #7a0f0f;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #610b0e;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  flex-grow: 1;
+}
+
+/* Content boxes */
+.content-box {
+  background-color: #1c1c1c;
+  border: 2px solid #a4161a;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  color: #ddd;
+  box-shadow: 0 0 12px rgba(164, 22, 26, 0.5);
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #f4f4f4;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #a4161a;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Lists */
+ul {
+  list-style: disc inside;
+  color: #ddd;
+}
+
+.services-list li,
+.faq p,
+.quote {
+  background-color: #2a2a2a;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border-left: 5px solid #a4161a;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.services-list li:hover,
+.faq p:hover,
+.quote:hover {
+  background-color: #a4161a;
+  color: #fff;
+  cursor: default;
+}
+
+/* Links */
+a {
+  color: #f05454;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff7675;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 3px solid #a4161a;
+  margin-top: auto;
+}
+
+.footer-logo-img {
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .contact-details p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .content-box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+}
+
+/* Our Garage Box */
+.our-garage-box {
+  max-width: 1100px;
+  margin: 40px auto 20px auto;
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 8px;
+  background-color: #111;
+  box-shadow: 0 4px 8px rgba(164, 22, 26, 0.2);
+  text-align: center;
+}
+
+.our-garage-box p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.garage-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+/* Promo Banner */
+.promo-banner {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  border: 2px solid #a4161a;
+}
+
+/* Contact Form Container */
+.contact-form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.form-box {
+  background-color: #2c2c2c;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.contact-table {
+  width: 100%;
+  border-spacing: 15px;
+}
+
+.contact-table input,
+.contact-table textarea {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #ddd;           /* changed from #fff for consistency */
+  font-size: 1rem;
+  border-radius: 4px;
+  font-family: 'Montserrat', Arial, sans-serif; /* ensure consistent font */
+}
+
+.contact-table label {
+  color: #ccc;
+  font-weight: bold;
+  vertical-align: top;
+  padding-top: 5px;
+  font-size: 1rem;       /* make label font size consistent */
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.contact-table button {
+  background-color: #c60000;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1rem;
+}
+
+.contact-table button:hover {
+  background-color: #e00000;
+}
+
+.form-container {
+  background-color: #2f2f2f;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.contact-intro {
+  text-align: center;
+  padding: 40px 20px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-info-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+.contact-info-list li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Reviews Box */
+.reviews-box {
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #2b2b2b;
+  color: #eee;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Review Buttons */
+.review-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.garage-photo-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #b22222;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.garage-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Fix for logo-container white text */
+.logo-container .white-text p {
+  color: white !important;
+  font-size: 0.9rem !important;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.logo-container .white-text a {
+  color: white !important;
+  font-size: 0.9rem !important;
+  text-decoration: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
